@@ -100,25 +100,27 @@ class _HomePageState extends State<HomePage> {
 
   Widget moduleLayout_3() {
     return Expanded(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              color: Colors.deepPurple,
-              width: 50,
-              height: 50,
-            ),
-            const Text(
-              "Coupon",
-              maxLines: 1,
-              textAlign: TextAlign.center,
-              softWrap: false,
-              style: TextStyle(
-                color: Colors.black54,
-                fontSize: 15,
+        child: InkWell(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                color: Colors.deepPurple,
+                width: 50,
+                height: 50,
               ),
-            ),
-          ],
+              const Text(
+                "Coupon",
+                maxLines: 1,
+                textAlign: TextAlign.center,
+                softWrap: false,
+                style: TextStyle(
+                  color: Colors.black54,
+                  fontSize: 15,
+                ),
+              ),
+            ],
+          ),
         ),
         flex: 1,
       );
@@ -126,25 +128,27 @@ class _HomePageState extends State<HomePage> {
 
   Widget moduleLayout_2() {
     return Expanded(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              color: Colors.deepPurple,
-              width: 50,
-              height: 50,
-            ),
-            const Text(
-              "New Products",
-              maxLines: 1,
-              textAlign: TextAlign.center,
-              softWrap: false,
-              style: TextStyle(
-                color: Colors.black54,
-                fontSize: 15,
+        child: InkWell(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                color: Colors.deepPurple,
+                width: 50,
+                height: 50,
               ),
-            ),
-          ],
+              const Text(
+                "New Products",
+                maxLines: 1,
+                textAlign: TextAlign.center,
+                softWrap: false,
+                style: TextStyle(
+                  color: Colors.black54,
+                  fontSize: 15,
+                ),
+              ),
+            ],
+          ),
         ),
         flex: 1,
       );
@@ -152,25 +156,27 @@ class _HomePageState extends State<HomePage> {
 
   Widget moduleLayout_1() {
     return Expanded(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              color: Colors.deepPurple,
-              width: 50,
-              height: 50,
-            ),
-            const Text(
-              "All Products",
-              maxLines: 1,
-              textAlign: TextAlign.center,
-              softWrap: false,
-              style: TextStyle(
-                color: Colors.black54,
-                fontSize: 15,
+        child: InkWell(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                color: Colors.deepPurple,
+                width: 50,
+                height: 50,
               ),
-            ),
-          ],
+              const Text(
+                "All Products",
+                maxLines: 1,
+                textAlign: TextAlign.center,
+                softWrap: false,
+                style: TextStyle(
+                  color: Colors.black54,
+                  fontSize: 15,
+                ),
+              ),
+            ],
+          ),
         ),
         flex: 1,
       );
