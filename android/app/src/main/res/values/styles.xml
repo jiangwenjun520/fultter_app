@@ -15,4 +15,13 @@
     <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
         <item name="android:windowBackground">?android:colorBackground</item>
     </style>
+    <style name="splashTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@mipmap/launch_image</item>
+        <!-- 设置activity切换动画 -->
+        <!--<item name="android:windowAnimationStyle">@style/splashActivityAnimation</item>-->
+    </style>
 </resources>

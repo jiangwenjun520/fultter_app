@@ -24,6 +24,7 @@ class _TabNavigatorState extends State<TabNavigator> {
     // TODO: implement build
     return Scaffold(
       body: PageView(
+        physics: const NeverScrollableScrollPhysics(),
         controller: _controller,
         children: const <Widget>[
           HomePage(),
