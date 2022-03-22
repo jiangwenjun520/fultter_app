@@ -50,10 +50,10 @@ class _HomePageState extends State<HomePage> {
 
   Container banna() {
     return Container(
-            padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
-            height: 240,
-            child: mySwiper(),
-          );
+      padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
+      height: 240,
+      child: mySwiper(),
+    );
   }
 
   Widget mySwiper() {
@@ -93,18 +93,15 @@ class _HomePageState extends State<HomePage> {
         mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.center,
         verticalDirection: VerticalDirection.down,
-        children: [
-          moduleLayout_1(),
-          moduleLayout_2(),
-          moduleLayout_3()
-        ],
+        children: [moduleLayout_1(), moduleLayout_2(), moduleLayout_3()],
       ),
     );
   }
 
-  InkWell moduleLayout_3() {
-    return InkWell(child: Expanded(child: Column(
-
+  Widget moduleLayout_3() {
+    return Expanded(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
               color: Colors.deepPurple,
@@ -118,16 +115,19 @@ class _HomePageState extends State<HomePage> {
               softWrap: false,
               style: TextStyle(
                 color: Colors.black54,
-                fontSize: 16,
+                fontSize: 15,
               ),
             ),
           ],
-        ),flex: 1,),);
+        ),
+        flex: 1,
+      );
   }
 
-  InkWell moduleLayout_2() {
-    return InkWell(child: Expanded(child: Column(
-
+  Widget moduleLayout_2() {
+    return Expanded(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
               color: Colors.deepPurple,
@@ -141,37 +141,39 @@ class _HomePageState extends State<HomePage> {
               softWrap: false,
               style: TextStyle(
                 color: Colors.black54,
-                fontSize: 16,
+                fontSize: 15,
               ),
             ),
           ],
-        ), flex: 1,),);
+        ),
+        flex: 1,
+      );
   }
 
-  InkWell moduleLayout_1() {
-    return InkWell(
-          child: Expanded(child: Column(
-
-            children: [
-              Container(
-                color: Colors.deepPurple,
-                width: 50,
-                height: 50,
+  Widget moduleLayout_1() {
+    return Expanded(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              color: Colors.deepPurple,
+              width: 50,
+              height: 50,
+            ),
+            const Text(
+              "All Products",
+              maxLines: 1,
+              textAlign: TextAlign.center,
+              softWrap: false,
+              style: TextStyle(
+                color: Colors.black54,
+                fontSize: 15,
               ),
-              const Text(
-                "All Products",
-                maxLines: 1,
-                textAlign: TextAlign.center,
-                softWrap: false,
-                style: TextStyle(
-                  color: Colors.black54,
-                  fontSize: 16,
-                ),
-              ),
-            ],
-          ),
-            flex: 1,),
-        );
+            ),
+          ],
+        ),
+        flex: 1,
+      );
   }
 }
 
